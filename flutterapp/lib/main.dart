@@ -28,6 +28,8 @@ class _MyAppState extends State<MyApp> {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
   double lat, long;
 
+
+
   void fcmSubscribe() {
     firebaseMessaging.subscribeToTopic('all');
   }
@@ -42,6 +44,19 @@ class _MyAppState extends State<MyApp> {
     flutterLocalNotificationsPlugin.initialize(platform);
 
     final MapPage _mapPage = MapPage();
+
+
+    /*stt.SpeechToText speech = stt.SpeechToText();
+    bool available = await speech.initialize( onStatus: statusListener, onError: errorListener );
+    if ( available ) {
+      speech.listen( onResult: resultListener );
+    }
+    else {
+      print("The user has denied the use of speech recognition.");
+    }
+    // some time later...
+    speech.stop()*/
+
 
     firebaseMessaging.configure(
       onLaunch: (Map<String, dynamic> msg) {
@@ -90,6 +105,7 @@ class _MyAppState extends State<MyApp> {
         );
         _mapPage;
       },
+
     );
 
 
@@ -209,7 +225,6 @@ class _MyHomePageState extends State<MyHomePage> {
         );
     }
   }
-
 
 
   @override

@@ -57,10 +57,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               end: Alignment.bottomCenter,
               stops: [0.1, 0.4, 0.7, 0.9],
               colors: [
-                Color(0xFF3594DD),
-                Color(0xFF4563DB),
-                Color(0xFF5036D5),
-                Color(0xFF5B16D0),
+                Color(0xFFFF8C00),
+                Color(0xFFFF7F50),
+                Color(0xFFFF6347),
+                Color(0xFFFF4500),
               ],
             ),
           ),
@@ -108,7 +108,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     },
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.all(40.0),
+                        padding: EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 0.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -126,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               'Before you leave,\nprepare your home',
                               style: kTitleStyle,
                             ),
-                            SizedBox(height: 20.0),
+                            SizedBox(height: 15.0),
                             Text(
                               'Remove combustibles, including firewood, yard waste, barbecue grills, and fuel cans, from your yard.',
                               style: kSubtitleStyle,
@@ -162,7 +162,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(40.0),
+                        padding: EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 0.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -190,7 +190,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(40.0),
+                        padding: EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 0.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -217,7 +217,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(40.0),
+                        padding: EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 0.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[

@@ -20,7 +20,7 @@ class _CameraPageState extends State<CameraPage> {
   bool locationFlagError = false;
 
   static BaseOptions options = new BaseOptions(
-  baseUrl: "http://192.168.8.236:6969",
+  baseUrl: "http://172.16.16.43:6969",
   connectTimeout: 5000,
   receiveTimeout: 3000,
   );
@@ -45,7 +45,7 @@ class _CameraPageState extends State<CameraPage> {
     }
 
     var response = await dio.post("/detect", data: formData);
-    log(response.toString());
+    log("Picture upload response: " + response.toString());
   }
 
   Future getLatLong() async{
@@ -91,7 +91,7 @@ class _CameraPageState extends State<CameraPage> {
       ),
       body: Center(
         child: _image == null
-            ? Text('No image selected.')
+            ? Text('Click an Image.')
             : Image.file(_image),
 
 
