@@ -1,0 +1,12 @@
+# Directories
+__pycache__
+.vscode
+AlarmImages/
+alarms/
+*.mp4
+*.avi
+
+# DCN
+DCNv2.egg-info/
+_ext.cpython-37m-x86_64-linux-gnu.so
+build/
