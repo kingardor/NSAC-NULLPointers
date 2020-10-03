@@ -20,7 +20,7 @@ class Theia:
         self.classes = self.read_class_names(self.path)
         self.num_classes = len(self.classes)
         self.colors = self.colorGenerator(self.num_classes)
-        self.inference_endpoint = 'http://127.0.0.1:8000/detect'
+        self.inference_endpoint = 'http://127.0.0.1:8000/detect_drone'
         self.source_path = sys.argv[1]
         # self.source = VideoCaptureAsync(0 if self.source_path == 'webcam' else self.source_path,
         #                                 width=1920, height=1080)
